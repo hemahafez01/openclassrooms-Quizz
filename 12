@@ -1,3 +1,4 @@
+  
 export class Book {
   constructor (title, author, description, pages, currentPage, read){
     this.title = title;
@@ -16,7 +17,7 @@ export class Book {
     } else if (page = pages){
       this.currentPage= page;
        this.read= true;
-    } else if {
+    } else {
        this.currentPage= page;
     }
   }
@@ -25,4 +26,4 @@ let harryPotter = new Book ("Harry Potter", "j k rolling", "Fiction novel", 250,
 let ghareb = new Book ("Ghareb", "M abdelkahar", "history novel", 350, 0, false);
 let theoryOfStructures = new Book ("Theory Of Structures", "Eng", "civil engineering", 650, 0, false);
 let books=[harryPotter, ghareb, theoryOfStructures]
-export const books = [];
+export  books ;
