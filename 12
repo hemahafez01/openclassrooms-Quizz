@@ -1,0 +1,28 @@
+export class Book {
+  constructor (title, author, description, pages, currentPage, read){
+    this.title = title;
+    this.author = author;
+    this.description = description;
+    this.pages = pages;
+    this.currentPage = currentPage;
+    this.read = read;
+  }
+  read(){
+    this.read= true;
+  }
+  readBook(page){
+    if(page<0 || page > this.pages){
+      this.currentPage= 0;
+    } else if (page = pages){
+      this.currentPage= page;
+       this.read= true;
+    } else if {
+       this.currentPage= page;
+    }
+  }
+}
+let harryPotter = new Book ("Harry Potter", "j k rolling", "Fiction novel", 250, 250, true);
+let ghareb = new Book ("Ghareb", "M abdelkahar", "history novel", 350, 0, false);
+let theoryOfStructures = new Book ("Theory Of Structures", "Eng", "civil engineering", 650, 0, false);
+let books=[harryPotter, ghareb, theoryOfStructures]
+export const books = [];
