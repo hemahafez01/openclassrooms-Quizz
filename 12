@@ -1,5 +1,4 @@
-  
- export class Book {
+export class Book {
   constructor (title, author, description, pages, currentPage, read){
     this.title = title;
     this.author = author;
@@ -8,27 +7,20 @@
     this.currentPage = currentPage;
     this.read = read;
   }
-  read(){
-    this.read= true;
-  }
   readBook(page){
     if(page<0 || page > this.pages){
       this.currentPage= 0;
-    } else if (page = pages){
-      this.currentPage= page;
-       this.read= true;
+    } else if (page = this.pages) {
+      this.currentPage= this.pages;
+       this.read = true;
     } else {
-       this.currentPage= page;
+       this.currentPage= this.pages;
     }
   }
 }
-let harryPotter = new Book ("Harry Potter", "j k rolling", "Fiction novel", 250, 250, true);
+let harryPotter = new Book ("Harry Potter", "j k rolling", "Fiction novel", 250, 0, true);
 let ghareb = new Book ("Ghareb", "M abdelkahar", "history novel", 350, 0, false);
 let theoryOfStructures = new Book ("Theory Of Structures", "Eng", "civil engineering", 650, 0, false);
-let anaKarnina = new Book ("Ana Karnina", "**", "history novel", 200, 200, true);
-//let books=[harryPotter, ghareb, theoryOfStructures]
-//console.log(books);
-console.log(ghareb)
-console.log(harryPotter)
-console.log(anaKarnina)
-export const books=[] ;
+let book1 = new Book ("book1", "Eng", "civil engineering", 300, 0, false);
+let book2 = new Book ("book2", "Eng", "civil engineering", 200, 0, false);
+export const books = [harryPotter, ghareb, theoryOfStructures, book1, book2] ;
